@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page </title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <nav id="navbar">
+        <header>Java Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#About_the_Java_Technology">About the Java Technology</a></li>
+            <li><a class="nav-link" href="#What_Can_Java_Technology_Do">What Can Java Technology Do?</a></li>
+            <li><a class="nav-link" href="#How_Will_Java_Technology_Change_My_Life">How Will Java Technology Change My Life?</a></li>
+            <li><a class="nav-link" href="#Hello_World_Application">Hello World Application</a></li>
+            <li><a class="nav-link" href="#Learning_the_Java_Language">Learning the Java Language</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="About_the_Java_Technology">
+            <header>About the Java Technology</header>
+            <p>Java technology is both a programming language and a platform.</p>
+            <h4>The Java Programming Language</h4>
+            <p>The Java programming language is a high-level language that can be characterized by all of the following buzzwords:</p>
+            <div id="Java-props">
+                <ul>
+                    <li>Simple</li>
+                    <li>Object oriented</li>
+                    <li>Distributed</li>
+                    <li>Multithreaded</li>
+                    <li>Dynamic</li>
+                </ul>
+                <ul>
+                    <li>Architecture neutral</li>
+                    <li>Portable</li>
+                    <li>High performance</li>
+                    <li>Robust</li>
+                    <li>Secure</li>
+                </ul>
+            </div>
+            <p>Each of the preceding buzzwords is explained in <a href="https://www.oracle.com/java/technologies/language-environment.html" target="_blank">The Java Language Environment</a> , a white paper written by James Gosling and Henry McGilton.</p>
+
+            <p>In the Java programming language, all source code is first written in plain text files ending with the .java extension. Those source files are then compiled into .class files by the javac compiler. A .class file does not contain code that is native to your processor; it instead contains bytecodes — the machine language of the Java Virtual Machine1 (Java VM). The java launcher tool then runs your application with an instance of the Java Virtual Machine.</p>
+            <img src="./images/img1.jpg" alt="java compilation process"/>
+            <figcaption>An overview of the software development process.</figcaption>
+            <p>Because the Java VM is available on many different operating systems, the same .class files are capable of running on Microsoft Windows, the Solaris Operating System (Solaris OS), Linux, or Mac OS. Some virtual machines, such as the Java SE HotSpot at a Glance, perform additional steps at runtime to give your application a performance boost. This includes various tasks such as finding performance bottlenecks and recompiling (to native code) frequently used sections of code.</p>
+            <img src="./images/img2.jpg"/>
+            <figcaption>Through the Java VM, the same application is capable of running on multiple platforms.</figcaption>
+
+            <h3>The Java Platform</h3>
+            <p>A platform is the hardware or software environment in which a program runs. We've already mentioned some of the most popular platforms like Microsoft Windows, Linux, Solaris OS, and Mac OS. Most platforms can be described as a combination of the operating system and underlying hardware. The Java platform differs from most other platforms in that it's a software-only platform that runs on top of other hardware-based platforms.
+            </p>
+            <p>The Java platform has two components:
+            </p>
+            <ul>
+                <li>The Java Virtual Machine(JVM)</li>
+                <li>The Java Application Programming Inteface(API)</li>
+            </ul>
+
+            <p> JVM is the base for the Java platform and is ported onto various hardware-based platforms.
+            </p>
+            <p>The API is a large collection of ready-made software components that provide many useful capabilities. It is grouped into libraries of related classes and interfaces; these libraries are known as packages. The next section, <a href="#">What Can Java Technology Do?</a> highlights some of the functionality provided by the API.
+
+            </p>
+            <img src="./images/img3.jpg" alt="jvm"/>
+            <figcaption>The API and Java Virtual Machine insulate the program from the underlying hardware.</figcaption>
+
+            <p>As a platform-independent environment, the Java platform can be a bit slower than native code. However, advances in compiler and virtual machine technologies are bringing performance close to that of native code without threatening portability.</p>
+        </section>
+            
+        <section class="main-section" id="What_Can_Java_Technology_Do">
+            <header>What Can Java Technology Do?</header>
+            <p>The general-purpose, high-level Java programming language is a powerful software platform. Every full implementation of the Java platform gives you the following features:</p>
+            <ul>
+                <li>
+                    <p>
+                        <strong>Development Tools</strong>
+                        ": The development tools provide everything you'll need for compiling, running, monitoring, debugging, and documenting your applications. As a new developer, the main tools you'll be using are the <code>javac</code> compiler, the <code>java</code> launcher, and the <code>javadoc</code> documentation tool."
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <strong>Application Programming Interface(API)</strong>
+                        ": The API provides the core functionality of the Java programming language. It offers a wide array of useful classes ready for use in your own applications. It spans everything from basic objects, to networking and security, to XML generation and database access, and more. The core API is very large; to get an overview of what it contains, consult the <a href="https://docs.oracle.com/javase/8/docs/index.html" target="_blank">Java Platform Standard Edition 8 Documentation</a>."
+                    </p>
+                </li>
+                <li>
+                    <strong>Deployment Technologies</strong>
+                    ": The JDK software provides standard mechanisms such as the Java Web Start software and Java Plug-In software for deploying your applications to end users."
+                </li>
+                <li>
+                    <strong>User Interface Toolkits</strong>
+                    ": The JavaFX, Swing, and Java 2D toolkits make it possible to create sophisticated Graphical User Interfaces (GUIs).
+                    "
+                </li>
+                <li>
+                    <strong>Integration Libraries</strong>
+                    ": Integration libraries such as the Java IDL API, JDBC API, Java Naming and Directory Interface (JNDI) API, Java RMI, and Java Remote Method Invocation over Internet Inter-ORB Protocol Technology (Java RMI-IIOP Technology) enable database access and manipulation of remote objects."
+                </li>
+            </ul>
+
+        </section>
+            
+        <section class="main-section" id="How_Will_Java_Technology_Change_My_Life">
+            <header>How Will Java Technology Change My Life?</header>
+            <p>We can't promise you fame, fortune, or even a job if you learn the Java programming language. Still, it is likely to make your programs better and requires less effort than other languages. We believe that Java technology will help you do the following:</p>
+            <ul>
+                <li>
+                    <strong>Get started quickly</strong>
+                    ": Although the Java programming language is a powerful object-oriented language, it's easy to learn, especially for programmers already familiar with C or C++."
+                </li>
+                <li>
+                    <strong>Write less code</strong>
+                    ": Comparisons of program metrics (class counts, method counts, and so on) suggest that a program written in the Java programming language can be four times smaller than the same program written in C++."
+                </li>
+                <li>
+                    <strong>Write better code</strong>
+                    ": The Java programming language encourages good coding practices, and automatic garbage collection helps you avoid memory leaks. Its object orientation, its JavaBeans™ component architecture, and its wide-ranging, easily extendible API let you reuse existing, tested code and introduce fewer bugs."
+                </li>
+                <li>
+                    <strong>Develop programs more quickly</strong>
+                    ": The Java programming language is simpler than C++, and as such, your development time could be up to twice as fast when writing in it. Your programs will also require fewer lines of code."
+                </li>
+                <li>
+                    <strong>Avoid platform dependencies</strong>
+                    ": You can keep your program portable by avoiding the use of libraries written in other languages."
+                </li>
+                <li>
+                    <strong>Write once, run anywhere(WORA)</strong>
+                    ": Because applications written in the Java programming language are compiled into machine-independent bytecodes, they run consistently on any Java platform."
+                </li>
+                <li>
+                    <strong>Distribute software more easily</strong>
+                    ": With Java Web Start software, users will be able to launch your applications with a single click of the mouse. An automatic version check at startup ensures that users are always up to date with the latest version of your software. If an update is available, the Java Web Start software will automatically update their installation."
+                </li>
+            </ul>
+        </section>
+            
+        <section class="main-section" id="Hello_World_Application">
+            <header>Hello World Application</header>
+            <p>
+                Below is java code for the famous "Hello World!" application:
+            </p> 
+            <pre>
+                <code>
+                    class HelloWorldApp {
+                        public static void main(String[] args) {
+                            System.out.println("Hello World!"); // Display the string.
+                        }
+                    }
+                </code>
+            </pre>
+   
+            <p>The "Hello World!" application consists of three primary components: source code comments, the HelloWorldApp class definition, and the main method. The following explanation will provide you with a basic understanding of the code, but the deeper implications will only become apparent after you've finished reading the rest of the tutorial.</p>
+
+            <p><strong>Source Code Comments</strong></p>
+            <p>
+                The following bold text defines the comments of the "Hello World!" application:
+                <pre>
+                    <code>
+                        <b>
+                        /**
+                        * The HelloWorldApp class implements an application that
+                        * simply prints "Hello World!" to standard output.
+                        */
+                        </b>
+                        class HelloWorldApp {
+                            public static void main(String[] args) {
+                                System.out.println("Hello World!"); <b>// Display the string.</b>
+                            }
+                        }
+                    </code>
+                </pre>
+            </p>
+            <p>Comments are ignored by the compiler but are useful to other programmers. The Java programming language supports three kinds of comments:</p>
+            <dl>
+                <dt>
+                    <code>
+                        /* 
+                        <em>text</em>
+                         */
+                    </code>
+                </dt>
+                <dd>
+                    The compiler ignores everything from 
+                    <code>/*</code>
+                     to 
+                    <code>*/</code>
+                    .
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <code>
+                        /** 
+                        <emp>documentation</emp>
+                         */
+                    </code>
+                </dt>
+                <dd>
+                    This indicates a documentation comment (doc comment, for short). The compiler ignores this kind of comment, just like it ignores comments that use 
+                    <code>/*</code>
+                     and 
+                    <code>*/</code>
+                    . The 
+                    <code>javadoc</code>
+                     tool uses doc comments when preparing automatically generated documentation.
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <code>
+                        // 
+                        <emp>text</emp>
+                    </code>
+                </dt>
+                <dd>
+                    The compiler ignores everything from 
+                    <code>//</code>
+                     to the end of the line.
+                </dd>
+            </dl>
+
+            <p><b>The <code>HelloWorldApp</code> Class Definition</b></p>
+            <p>
+                The following bold text begins the class definition block for the "Hello World!" application:
+                <pre>
+                    /**
+                    * The HelloWorldApp class implements an application that
+                    * simply displays "Hello World!" to the standard output.
+                    */
+                    <b>class HelloWorldApp</b> {
+                        public static void main(String[] args) {
+                            System.out.println("Hello World!"); // Display the string.
+                        }
+                    }
+                </pre>
+            </p>
+            <p>As shown above, the most basic form of a class definition is:
+            </p>
+            <pre>
+                class name {
+                    . . .
+                }
+            </pre>
+            <p>The keyword <code>class</code> begins the class definition for a class named <code>name</code>, and the code for each class appears between the opening and closing curly braces marked in bold above.</p>
+
+            <p><b>The <code>main</code> Method</b></p>
+            <p>The following bold text begins the definition of the main method:</p>
+            <pre>
+                /**
+                * The HelloWorldApp class implements an application that
+                * simply displays "Hello World!" to the standard output.
+                */
+                class HelloWorldApp {
+                    <b>public static void main(String[] args) {</b>
+                        System.out.println("Hello World!"); //Display the string.
+                    <b>}</b>
+                }
+            </pre>
+            <p>In the Java programming language, every application must contain a <code>main</code> method whose signature is:</p>
+            <pre>
+                public static void main(String[] args)
+            </pre>
+            <p>The modifiers <code>public</code> and <code>static</code> can be written in either order (<code>public static</code> or <code>static public</code>), but the convention is to use public static as shown above. You can name the argument anything you want, but most programmers choose "args" or "argv".</p>
+
+            <p>The <code>main</code> method is similar to the <code>main</code>> function in C and C++; it's the entry point for your application and will subsequently invoke all the other methods required by your program.</p>
+
+            <p>The <code>main</code> method accepts a single argument: an array of elements of type <code>String</code>.</p>
+
+            <pre>
+                public static void main(<b>String[] args</b>)
+            </pre>
+        </section>
+
+        <section class="main-section" id="Learning_the_Java_Language">
+            <header>Learning the Java Language</header>
+            <p>This trail covers the fundamentals of programming in the Java programming language.</p>
+            <p>
+                <a href="https://docs.oracle.com/javase/tutorial/java/concepts/index.html" target="_blank">
+                    <img src="./images/javaIcon.jpg" align="left" width="20" height="20" border="0" alt="trail icon">
+                    <b>Object-Oriented Programming Concepts</b> 
+                </a>
+                teaches you the core concepts behind object-oriented programming: objects, messages, classes, and inheritance. This lesson ends by showing you how these concepts translate into code. Feel free to skip this lesson if you are already familiar with object-oriented programming.
+            </p>
+            <p>
+                <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/index.html" target="_blank">
+                    <img src="./images/javaIcon.jpg" align="left" width="20" height="20" border="0" alt="trail icon">
+                    <b>Language Basics</b> 
+                </a>
+                describes the traditional features of the language, including variables, arrays, data types, operators, and control flow.
+            </p>
+            <p>
+                <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/index.html" target="_blank">
+                    <img src="./images/javaIcon.jpg" align="left" width="20" height="20" border="0" alt="trail icon">
+                    <b>Classes and Objects</b> 
+                </a>
+                describes how to write the classes from which objects are created, and how to create and use the objects.
+            </p>
+            <p>
+                <a href="https://docs.oracle.com/javase/tutorial/java/annotations/index.html" target="_blank">
+                    <img src="./images/javaIcon.jpg" align="left" width="20" height="20" border="0" alt="trail icon">
+                    <b>Annotations</b> 
+                </a>
+                are a form of metadata and provide information for the compiler. This lesson describes where and how to use annotations in a program effectively.
+            </p>
+            <p>
+                <a href="https://docs.oracle.com/javase/tutorial/java/IandI/index.html" target="_blank">
+                    <img src="./images/javaIcon.jpg" align="left" width="20" height="20" border="0" alt="trail icon">
+                    <b>Interfaces and Inheritance</b> 
+                </a>
+                describes interfaces—what they are, why you would want to write one, and how to write one. This section also describes the way in which you can derive one class from another. That is, how a <em>subclass</em> can inherit fields and methods from a <em>superclass</em>. You will learn that all classes are derived from the <code>Object</code> class, and how to modify the methods that a subclass inherits from superclasses.
+            </p>
+            <p>
+                <a href="https://docs.oracle.com/javase/tutorial/java/data/index.html" target="_blank">
+                    <img src="./images/javaIcon.jpg" align="left" width="20" height="20" border="0" alt="trail icon">
+                    <b>Numbers and Strings</b> 
+                </a>
+                This lesson describes how to use <code>Number</code> and <code>String</code> objects The lesson also shows you how to format data for output.
+            </p>
+            <p>
+                <a href="https://docs.oracle.com/javase/tutorial/java/generics/index.html" target="_blank">
+                    <img src="./images/javaIcon.jpg" align="left" width="20" height="20" border="0" alt="trail icon">
+                    <b>Generics</b> 
+                </a>
+                are a powerful feature of the Java programming language. They improve the type safety of your code, making more of your bugs detectable at compile time.
+            </p>
+            <p>
+                <a href="https://docs.oracle.com/javase/tutorial/java/package/index.html" target="_blank">
+                    <img src="./images/javaIcon.jpg" align="left" width="20" height="20" border="0" alt="trail icon">
+                    <b>Packages</b>
+                </a>
+                are a feature of the Java programming language that help you to organize and structure your classes and their relationships to one another.
+            </p>
+        </section>
+    </main>
+</body>
+</html>
